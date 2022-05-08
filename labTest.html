@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="css/labTest.css">
+    <link rel="stylesheet" href="css/general.css">
+</head>
+
+<body>
+    <h1 id="header"> Pharmacy</h1>
+    <section id="navigate">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Our Medicines</a>
+                    <div id="healthCareList" class="dropdown-content">
+                        <a href="#">Fever</a>
+                        <a href="#">Muscle Pains</a>
+                        <a href="#">Cold and Cough</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">Health Care</a>
+                    <div id="healthCareList" class="dropdown-content">
+                        <a href="#">Baby Care</a>
+                        <a href="#">Skin Care</a>
+                        <a href="#">Home Care</a>
+                        <a href="#">Personal Care</a>
+                        <a href="#">Pet Care</a>
+                    </div>
+                </li>
+                <li><a href="labTest.html">Lab Test</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="formSection">
+        <div id="inputSection">
+            <form action="Home.html">
+                <div id="contactDetailsSection">
+                    <h3>1. Your Contact Details</h3>
+                    <input type="text" name="fullName" placeholder="Full Name" required>
+                    <input type="text" name="patientId" placeholder="Patient Id if  exists"><br><br>
+                    <input type="text" name="contactNumber" placeholder="Contact Number" required>
+                    <input type="email" name="emailId" placeholder="Email Id" required>
+                </div>
+
+                <div id="addressSection">
+                    <h3>2. Address</h3>
+                    <input type="text" name="houseNumber" placeholder="House Number" required>
+                    <input type="text" name="street" placeholder="Street" required><br><br>
+                    <input type="text" name="area" placeholder="Area" minlength="8" required><br><br>
+                    <label for="district">District:</label>
+                    <select name="district" id="district">
+                        <option value="Choose">Choose</option>
+                        <option value="Rangareddy">Rangareddy</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                    </select>
+                </div>
+
+                <div id="testTypeSection">
+                    <h3>3. Test Type <span class="message">(Check atleast one box without fail)</span></h3>
+
+                    <div><input type="checkbox" name="CBC">
+                    <label for="CBC">CBC</label></div>
+                    <div><input type="checkbox" name="Complete Urine">
+                    <label for="Complete Urine">Complete Urine</label></div>
+                    <div><input type="checkbox" name="Lipid Profile">
+                    <label for="Lipid Profile">Lipid Profile</label></div><br>
+                    <div><input type="checkbox" name="Thyroid Stimulating Hormone(TSH)">
+                    <label for="Thyroid Stimulating Hormone(TSH)">Thyroid Stimulating Hormone(TSH)</label></div>
+                    <div><input type="checkbox" name="Glucose Test">
+                    <label for="Glucose Test">Glucose Test</label></div>
+                </div>
+
+                <div id="reportCopySection">
+                    <h3>4. Do you want a hard copy of the report also?</h3>
+                    <div>
+                        <input type="radio" name="reportCopy" value="yes">
+                        <label>Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="reportCopy" value="no">
+                        <label>No</label>
+                    </div>
+                </div>
+
+                <div id="dateTimeSection">
+                    <h3>4. Select Your Comfortable Date and Time</h3>
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="date">
+                    <label for="time">Time:</label>
+                    <input type="time" name="time" id="time">
+                    <br>
+                </div>
+            </form>
+        </div>
+        <div id="imageSection">
+            <img src="images/Lab-Test/lab-test.jpg" alt="">
+        </div>
+
+    </section>
+    <section id="buttonGroup">
+        <button>Submit</button>
+        <button>Reset</button>
+    </section>
+
+    <footer>@copyright. Only for demonstration purpose.</footer>
+</body>
+
+</html>

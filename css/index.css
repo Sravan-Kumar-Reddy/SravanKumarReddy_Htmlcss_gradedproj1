@@ -1,0 +1,91 @@
+#offersAnimation {
+    height: 33.5vw;
+    border: 2px solid steelblue;
+    animation-name: offersAnimation;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+
+@keyframes offersAnimation {
+    0% {
+        background-image: url("../images/Animation/ani1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100vw 33.5vw;
+    }
+
+    20% {
+        background-image: url("../images/Animation/ani2.png");
+        background-repeat: no-repeat;
+        background-size: 100vw 33.5vw;
+    }
+
+    40% {
+        background-image: url("../images/Animation/ani3.jpg");
+        background-repeat: no-repeat;
+        background-size: 100vw 33.5vw;
+    }
+
+    60% {
+        background-image: url("../images/Animation/ani4.jpg");
+        background-repeat: no-repeat;
+        background-size: 100vw 33.5vw;
+    }
+
+    100% {
+        background-image: url("../images/Animation/ani5.jpg");
+        background-repeat: no-repeat;
+        background-size: 100vw 33.5vw;
+    }
+}
+
+#productsDiv{
+    display:flex;
+    justify-content: space-evenly;
+}
+figcaption h4{
+    margin: 2%;
+}
+
+.covidCareProduct,
+.diabetesCareProduct{
+    height: 300px !important;
+    width: 22%;
+    /* border: 2px solid steelblue; */
+    background-color: #e6e6e9;
+    box-shadow: 2.5px 2.5px 5px #999999;
+}
+.covidCareProduct img,
+.diabetesCareProduct img{
+    height: 200px;
+    width: -webkit-fill-available;
+    margin: 0 3%;
+}
+.covidCareProduct img:hover,
+.diabetesCareProduct img:hover{
+    height: 215px;
+    width: -webkit-fill-available;
+    margin: 0 1%;
+}
+.covidCareProduct div,
+.diabetesCareProduct div{
+    margin-left: 2%;
+}
+
+.productButton{
+    width: 96%;
+    margin: 0 2%;
+    color: rgb(253, 167, 8);
+}
+
+.productButton:active {
+    border-radius: 2px;
+    border:1px solid rgb(0 255 76);
+    background-color: rgb(250, 234, 230);
+}
+
+.imageContainer{
+    height: 235px;
+    overflow: hidden;
+    margin: 0 !important;
+}

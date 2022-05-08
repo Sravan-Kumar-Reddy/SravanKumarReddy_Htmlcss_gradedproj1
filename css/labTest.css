@@ -1,0 +1,78 @@
+#formSection{
+    width: 80%;
+    border: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 2% 9.5% 0.70% 9.5%;
+    display: inline-block;
+    height: 382px;
+    overflow: auto;
+}
+input{
+    padding: 2% .5%;
+}
+
+input[type="date"],
+input[type="time"]{
+    padding: 0.5%;
+}
+input[type="text"],
+input[type="email"]{
+    border: 0;
+    border-bottom: 1px solid rgb(78, 78, 78);
+    width: 45%;
+}
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible{
+    border: 0;
+    border-bottom: 2px solid rgb(54, 54, 54) !important;
+    outline: none;
+    background-color: rgb(235, 235, 235);
+}
+#district{
+    padding: 0.75% 0.5%;
+    /* margin: 1% 0; */
+}
+#inputSection{
+    width: 45%;
+    padding: 2%;
+    float: left;
+}
+#inputSection form{
+    padding: 2%;
+}
+#imageSection{
+    width: 50%;
+    height: 382px;
+    float: right;
+    position: sticky;
+    top: 0;
+}
+#imageSection img{
+    height: inherit;
+    width: -webkit-fill-available;
+}
+#buttonGroup{
+    text-align: center;
+}
+#testTypeSection div{
+    display: inline-flex;
+    margin-right: 5%;
+}
+#reportCopySection div{
+    margin-right: 2%;
+    display: inline-block;
+}
+
+#buttonGroup button{
+    background-color: #cd1151;
+    padding: 0.25% 1.25%;
+    border-radius: 5px;
+    border: 0;
+    margin: 0.5%;
+    color: white;
+}
+
+
+#buttonGroup button:focus-visible{
+outline: none;
+}
